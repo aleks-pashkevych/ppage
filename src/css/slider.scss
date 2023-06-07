@@ -1,0 +1,41 @@
+.swiper {
+  max-width: 100%;
+  max-height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.slider{
+  &__main{
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+  &__image{
+    &-wrapper{
+      overflow: hidden;
+     padding: 10% 20%;
+      
+    }
+    &-item{
+      max-height: 300px;
+      // max-width: 60%;
+      margin: 0 auto;
+    }
+  }
+}

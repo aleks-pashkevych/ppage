@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Personal Page</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap"
+      rel="stylesheet"
+    />
+    <link href=" https://cdn.jsdelivr.net/npm/swiper@9.3.2/modules/scrollbar/scrollbar.min.css " rel="stylesheet">
+  </head>
+  <body>
+
+  <div class="main__wrapper">
+    <!-- Header -->
+
+    <nav class="header border-gray-200 bg-white dark:bg-gray-900">
+      <div
+        class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+      >
+        <a href="https://flowbite.com/" class="flex items-center">
+          <img src="img/Logo.png" class="h-10" alt="Tracer" />
+          <span
+            class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
+            >Tracer</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+          id="nav-btn"
+          onclick="navShow()"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="h-8 w-8"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block rounded bg-blue-700 py-2 pl-3 pr-4 text-white dark:text-white md:bg-transparent md:p-0 md:text-blue-700 md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                >My Works</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main__content-wrapper">
+      <div class="main__content-item">
+        <div class="main__content-left">
+          <img src="img/tracer-face.jpg" alt="Me" class="main__content-img" />
+        </div>
+        <div class="main__content-right">
+          <h1 class="main__headtext">Hello, I'm Tracer.</h1>
+          <p class="main__description">
+            I'm a graffiti creator. I'm working with full width of various
+            graffiti items. I can draw down any kind of paints.
+          </p>
+          <p class="main__description">
+            If you wish I can even draw something at yor enemy property at
+            night, but with additional payment.
+          </p>
+          <p class="main__description">
+            If you wish, you can look at some of my forks.
+          </p>
+        </div>
+      </div>
+      <div class="main__content-item slider__main">
+        <h1 class="main__headtext">Some Of My Works:</h1>
+        <div class="swiper mySwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slider__image-wrapper">
+                <img
+                  src="img/0.jpg"
+                  alt="The Image"
+                  class="slider__image-item"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider__image-wrapper">
+                <img
+                  src="img/cake.jpg"
+                  alt="The Image"
+                  class="slider__image-item"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider__image-wrapper">
+                <img
+                  src="img/bad-boy.jpg"
+                  alt="The Image"
+                  class="slider__image-item"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider__image-wrapper">
+                <img
+                  src="img/heart.jpg"
+                  alt="The Image"
+                  class="slider__image-item"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Footer-->
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__content">
+        <div class="footer__logotype">Tracer</div>
+        <div class="footer__middle">
+          <h2 footer class="footer__middle-headline"></h2>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a href="index.html" class="footer__link"> Main </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="about.html" class="footer__link"> My Works </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="insex.html" class="footer__link"> Additional </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <ul class="footer__social-nav">
+            <li class="footer__social-item">
+              <a href="" class="footer__sicial-link">
+                <img src="img/vk.png" alt="Vk" class="footer__social-img" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="" class="footer__sicial-link">
+                <img
+                  src="img/facebook.png"
+                  alt="FaceBook"
+                  class="footer__social-img"
+                />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="" class="footer__sicial-link">
+                <img
+                  src="img/insta.png"
+                  alt="Instagram"
+                  class="footer__social-img"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination"
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
